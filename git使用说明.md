@@ -19,7 +19,11 @@
 
 >将本地的仓库提交到github上的master分支；  
 >>git push -u origin master  
->>备注：点击enter后会弹出框，要求输入github的账号与密码  
+>>备注：点击enter后会弹出框，要求输入github的账号与密码    
+
+>远程同步更新;    
+>>$ git fetch    (默认实现所有分支的更新）
+>>$ git fetch <远程主机名> <分支名>   （对特定分支的更新）
 
 >删除工作区文件，而且这次删除是放入暂存区  
 >>git rm [filename1] [filename2]...  
