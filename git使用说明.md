@@ -34,8 +34,27 @@
 >帮助命令
 >>git --help  
 
+>查看每次详细修改内容的  
+>>git log -p <file>   
+>
 > 撤销最近的一个提交:  
 >>git revert HEAD
 #常用的git命令查看链接：
-http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html  
+><font color=red>如果提交文件时没有更新到最新版本，可以使用命令：  </font> 
+>> git pull origin master  或  
+>>git pull --rebase origin master
+>  
+>>备注:git pull等效于get fetch origin和get merge origin/master这两条命令  
+>查看文件状态：git status  
 
+<font color=red> # Git 分支  </font>  
+git branch  # 查看分支   
+git branch  6.x- 1.x  # 添加分支 6.x-1.x     
+git branch checkout master  # 切换到主分支   
+git branch  -d  6.x- 1.x  # 删除分支 6.x-1.x   
+git push origin :branchname  # 删除远端分支 
+
+####注意：  
+每个 commit 只改一件事情。如果一个文档有多个变更，使用 git add --patch 只选择文档中的部分变更进入 stage
+· 写清楚 commit message
